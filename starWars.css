@@ -1,12 +1,29 @@
 body {
-    background: url('./bkgd2.jpg') no-repeat center center fixed;
+    background: url('./assets/bkgd2.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     height: 100%;
+    color: rgba(6, 252, 239, .2);
+    font-family: 'Star Wars', sans-serif;
+}
+
+@font-face {
+    font-family: 'Star Wars';
+    src: URL('./assets/STARWARS.TTF') format('ttf');
+}
+
+body{
+    text-align: center;
+    align-content: center;
 
 }
-.whitey{
-    background-color: white;
+
+h3 {
+    background-color: rgba(6, 252, 239, 0.3);
+    color: black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 h1#title {
@@ -23,16 +40,28 @@ p {
 
 li {
     color: rgb(1, 252, 239);
-    font-size:20px;
+    font-size: 20px;
 }
+
 .buttons {
     text-align: center;
-    
 }
+
 .hot {
-    background-color:rgb(241, 171, 212);
+    background-color: rgb(241, 171, 212);
     font-weight: bold;
     font-size: 20px;
+}
+.panel{
+    margin: 1%;
+}
+.panel-heading{
+    background-color: black;
+    color: white;
+}
+.panel-body{
+    background-color: white;
+    color: black;
 }
 
 .temperate {

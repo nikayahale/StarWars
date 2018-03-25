@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="starWars.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="./starWars.css">
     <title>Star Wars Planet Beta</title>
 </head>
 
@@ -18,38 +18,12 @@
     <br>
     <p>Have you ever wondered what Star Wars planets are best for you? Well now you can know instantly! All you have to do is
         type in your ideal environment!</p>
-    <div class="container">
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="btn-group btn-group-lg" role="group" aria-label="...">
-                <button class="btn btn-danger" id="hot" onclick="getClimate(event)">Like it hot?</button>
-                <button class="btn btn-primary" id="frozen" onclick="getClimate(event)">Keep it cool!</button>
-                <button class="btn btn-success" id="temperate" onclick="getClimate(event)">Forests, please!</button>
-            </div>
-        </div>
-
-        <div id="bootonGroop1" class="btn-group btn-group-lg" role="group" aria-label="...">
-            <button class="btn btn-danger" id="hot" onclick="getView(event)"></button>
-            <button class="btn btn-primary" id="frozen" onclick="getView(event)">Beach</button>
-            <button class="btn btn-success" id="temperate" onclick="getView(event)">City</button>
-        </div>
-
-        <div id="bootonGroop2" class="btn-group btn-group-lg" role="group" aria-label="...">
-            <button class="btn btn-danger" id="hot" onclick="getPopulation(event)">Like it hot?</button>
-            <button class="btn btn-primary" id="frozen" onclick="getPopulation(event)">Keep it cool!</button>
-            <button class="btn btn-success" id="temperate" onclick="getPopulation(event)">Forests, please!</button>
-        </div>
-
+    <button class="btn btn-warning" onclick="startHere()">Start Here!</button>
+    <br>
+    <br>
+    <div id="theContainer" class="container center-block">
+        <div class="row" id="row1"></div>
     </div>
-
-
-
-
-
-
-
 
 
 
@@ -82,11 +56,12 @@
     <!-- <button class="submit">Find My Planet</button>
                     </p> -->
     <!-- </form>
-            </div>
+                    </div>
         </div>
         <ul>
         </ul>
 -->
+
     <script type="text/javascript" src='./starWars.js'></script>
 </body>
 
